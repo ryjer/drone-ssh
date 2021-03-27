@@ -7,10 +7,8 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-  # 每月27号，4:12 执行一次
-  #  - cron: '12 4 27 * *'
-  # 每周六，4:12 执行一次，以同步官方latest
-    - cron: '12 4 * * SAT'
+  # 每月27号，1:15 执行一次
+    - cron: '15 1 27 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -56,7 +54,7 @@ jobs:
             ryjer/drone-ssh:latest
             ryjer/drone-ssh:alpine
       # 同步 dockerhub README.md 文件
-      - name: Sync README.md
+      - name: Sync dockerhub README.md
         uses: ms-jpq/sync-dockerhub-readme@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
