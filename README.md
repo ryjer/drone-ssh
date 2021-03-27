@@ -1,8 +1,10 @@
 # drone-ssh
 
-![buildx](https://github.com/ryjer/drone-ssh/workflows/buildx-latest/badge.svg)
+![buildx](https://github.com/ryjer/drone-ssh/workflows/buildx/badge.svg)
+[![Docker Stars](https://img.shields.io/docker/stars/ryjer/drone-ssh.svg)](https://hub.docker.com/r/ryjer/drone-ssh/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/ryjer/drone-ssh.svg)](https://hub.docker.com/r/ryjer/drone-ssh/)
 [![micro badger](https://images.microbadger.com/badges/image/ryjer/drone-ssh.svg)](https://microbadger.com/images/ryjer/drone-ssh "Get your own image badge on microbadger.com")
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Drone plugin to execute commands on a remote host through SSH. 
 # Usage in drone ci
